@@ -1,0 +1,17 @@
+E:\TaskManagement\TaskManagement\Repository Layer\bin\Debug\net8.0\Repository Layer.deps.json
+E:\TaskManagement\TaskManagement\Repository Layer\bin\Debug\net8.0\Repository Layer.runtimeconfig.json
+E:\TaskManagement\TaskManagement\Repository Layer\bin\Debug\net8.0\Repository Layer.dll
+E:\TaskManagement\TaskManagement\Repository Layer\bin\Debug\net8.0\Repository Layer.pdb
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.csproj.AssemblyReference.cache
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.AssemblyInfoInputs.cache
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.AssemblyInfo.cs
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.csproj.CoreCompileInputs.cache
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.dll
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\refint\Repository Layer.dll
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.pdb
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.genruntimeconfig.cache
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\ref\Repository Layer.dll
+E:\TaskManagement\TaskManagement\Repository Layer\bin\Debug\net8.0\Common Layer.dll
+E:\TaskManagement\TaskManagement\Repository Layer\bin\Debug\net8.0\Common Layer.pdb
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.csproj.CopyComplete

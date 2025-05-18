@@ -1,0 +1,17 @@
+E:\TaskManagement\TaskManagement\Business Layer\bin\Debug\net8.0\Business Layer.deps.json
+E:\TaskManagement\TaskManagement\Business Layer\bin\Debug\net8.0\Business Layer.dll
+E:\TaskManagement\TaskManagement\Business Layer\bin\Debug\net8.0\Business Layer.pdb
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.AssemblyInfoInputs.cache
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.AssemblyInfo.cs
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.csproj.CoreCompileInputs.cache
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.dll
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\refint\Business Layer.dll
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.pdb
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\ref\Business Layer.dll
+E:\TaskManagement\TaskManagement\Business Layer\bin\Debug\net8.0\Common Layer.dll
+E:\TaskManagement\TaskManagement\Business Layer\bin\Debug\net8.0\Repository Layer.dll
+E:\TaskManagement\TaskManagement\Business Layer\bin\Debug\net8.0\Common Layer.pdb
+E:\TaskManagement\TaskManagement\Business Layer\bin\Debug\net8.0\Repository Layer.pdb
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.csproj.AssemblyReference.cache
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.csproj.CopyComplete

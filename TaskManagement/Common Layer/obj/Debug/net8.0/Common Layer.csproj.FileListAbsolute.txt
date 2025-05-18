@@ -1,0 +1,11 @@
+E:\TaskManagement\TaskManagement\Common Layer\bin\Debug\net8.0\Common Layer.deps.json
+E:\TaskManagement\TaskManagement\Common Layer\bin\Debug\net8.0\Common Layer.dll
+E:\TaskManagement\TaskManagement\Common Layer\bin\Debug\net8.0\Common Layer.pdb
+E:\TaskManagement\TaskManagement\Common Layer\obj\Debug\net8.0\Common Layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\TaskManagement\TaskManagement\Common Layer\obj\Debug\net8.0\Common Layer.AssemblyInfoInputs.cache
+E:\TaskManagement\TaskManagement\Common Layer\obj\Debug\net8.0\Common Layer.AssemblyInfo.cs
+E:\TaskManagement\TaskManagement\Common Layer\obj\Debug\net8.0\Common Layer.csproj.CoreCompileInputs.cache
+E:\TaskManagement\TaskManagement\Common Layer\obj\Debug\net8.0\Common Layer.dll
+E:\TaskManagement\TaskManagement\Common Layer\obj\Debug\net8.0\refint\Common Layer.dll
+E:\TaskManagement\TaskManagement\Common Layer\obj\Debug\net8.0\Common Layer.pdb
+E:\TaskManagement\TaskManagement\Common Layer\obj\Debug\net8.0\ref\Common Layer.dll
