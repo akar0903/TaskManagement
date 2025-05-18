@@ -15,3 +15,4 @@ E:\TaskManagement\TaskManagement\Business Layer\bin\Debug\net8.0\Common Layer.pd
 E:\TaskManagement\TaskManagement\Business Layer\bin\Debug\net8.0\Repository Layer.pdb
 E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.csproj.AssemblyReference.cache
 E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.csproj.CopyComplete
+E:\TaskManagement\TaskManagement\Business Layer\obj\Debug\net8.0\Business Layer.sourcelink.json

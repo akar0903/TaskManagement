@@ -33,5 +33,9 @@ namespace Business_Layer.Services
         {
             return repository.DeleteTask(id);
         }
+        public List<TaskEntity> GetAllTasks()
+        {
+            return repository.GetAllTasks();
+        }
     }
 }

@@ -14,5 +14,6 @@ namespace Repository_Layer.Interfaces
         public TaskEntity GetTaskById(int id);
         public TaskEntity UpdateTask(int id, TaskEntity updatedTask);
         public TaskEntity DeleteTask(int id);
+        public List<TaskEntity> GetAllTasks();
     }
 }

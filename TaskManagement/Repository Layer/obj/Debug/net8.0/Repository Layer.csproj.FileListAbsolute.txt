@@ -15,3 +15,4 @@ E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\ref\Repositor
 E:\TaskManagement\TaskManagement\Repository Layer\bin\Debug\net8.0\Common Layer.dll
 E:\TaskManagement\TaskManagement\Repository Layer\bin\Debug\net8.0\Common Layer.pdb
 E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.csproj.CopyComplete
+E:\TaskManagement\TaskManagement\Repository Layer\obj\Debug\net8.0\Repository Layer.sourcelink.json

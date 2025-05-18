@@ -14,5 +14,6 @@ namespace Business_Layer.Interfaces
         public TaskEntity GetTaskById(int id);
         public TaskEntity UpdateTask(int id,TaskEntity taskUpdate);
         public TaskEntity DeleteTask(int id);
+        public List<TaskEntity> GetAllTasks();
     }
 }

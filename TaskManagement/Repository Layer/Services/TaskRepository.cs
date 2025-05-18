@@ -42,10 +42,13 @@ namespace Repository_Layer.Services
         }
         public TaskEntity UpdateTask(int id, TaskEntity updatedTask)
         {
-            var task = context.Tasks.FirstOrDefault(x => x.Id == id);
+            var task = context.Tasks.FirstOrDefault(x => x.Id == updatedTask.Id);
 
             if (task == null)
                 throw new Exception("Task not found");
+            if(task.Id != updatedTask.Id) {
+                throw new Exception("ID of the task cant be updated");
+            }
             if (string.IsNullOrWhiteSpace(updatedTask.Title) && string.IsNullOrWhiteSpace(updatedTask.Description))
                 throw new Exception("Title and description both cannot be empty");
             if (!string.IsNullOrWhiteSpace(updatedTask.Title))
@@ -77,8 +80,10 @@ namespace Repository_Layer.Services
                 throw new Exception("Task is not found");
             }
         }
-
-
+        public List<TaskEntity> GetAllTasks()
+        {
+            return context.Tasks.ToList();
+        }
     }
-    }
+}
 

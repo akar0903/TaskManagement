@@ -55,11 +55,11 @@ namespace Task_Management.Controllers
         }
         [HttpPut]
         [Route("UpdateTask")]
-        public ActionResult UpdateTask(int TaskId, TaskEntity taskUpdate)
+        public ActionResult UpdateTask(TaskEntity taskUpdate)
         {
             try
             {
-                var response = manager.UpdateTask(TaskId, taskUpdate);
+                var response = manager.UpdateTask(taskUpdate.Id, taskUpdate);
                 if (response != null)
                 {
                     return Ok(new ResModel<TaskEntity> { Success = true, Message = "Task is updated", Data = response });
@@ -93,6 +93,20 @@ namespace Task_Management.Controllers
             catch (Exception ex)
             {
                 return BadRequest(new ResModel<TaskEntity> { Success = false, Message = ex.Message, Data = null });
+            }
+        }
+        [HttpGet]
+        [Route("GetAllTasks")]
+        public ActionResult GetAllTasks()
+        {
+            List<TaskEntity> response = manager.GetAllTasks();
+            if (response != null)
+            {
+                return Ok(new ResModel<List<TaskEntity>> { Success = true, Message = "Fetched Successfully", Data = response });
+            }
+            else
+            {
+                return BadRequest(new ResModel<List<TaskEntity>> { Success = true, Message = "Creation Failed", Data = response });
             }
         }
     }

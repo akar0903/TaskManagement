@@ -1,17 +1,25 @@
 using Business_Layer.Interfaces;
-using Microsoft.AspNetCore.Authentication;
+using Business_Layer.Services;
+using Microsoft.EntityFrameworkCore;
 using Repository_Layer.Context;
 using Repository_Layer.Interfaces;
-using Business_Layer.Services;
 using Repository_Layer.Services;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder
+                .AllowAnyOrigin() // Or .WithOrigins("http://localhost:3000")
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+        });
+});
 
-// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddDbContext<TaskContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("TaskDb")));
@@ -22,7 +30,9 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Enable CORS
+app.UseCors("AllowAll");
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -32,5 +42,4 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
-
 app.Run();
