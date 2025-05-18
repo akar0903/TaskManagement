@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #2c3e50, #4a5568);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+            color: #e2e8f0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+        }
+        
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .container {
+            background: rgba(45, 55, 72, 0.85);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+            max-width: 900px;
+            margin: 60px auto;
+            transition: all 0.3s ease;
+        }
+        
+        h1 {
+            color: #edf2f7;
+            text-align: center;
+            font-weight: 800;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-in;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        
+        h3 {
+            color: #edf2f7;
+            font-weight: 600;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card {
+            background: linear-gradient(135deg, #2d3748, #4a5568);
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .card-body {
+            padding: 2rem;
+        }
+        
+        .form-control {
+            border-radius: 10px;
+            background: #2d3748;
+            color: #e2e8f0;
+            border: 1px solid #718096;
+            transition: all 0.3s ease;
+            padding: 12px;
+            font-size: 1rem;
+        }
+        
+        .form-control:focus {
+            border-color: #6b48ff;
+            box-shadow: 0 0 12px rgba(107, 72, 255, 0.4);
+            background: linear-gradient(135deg, #2d3748, #4a5568);
+            color: white;
+        }
+        
+        .form-control::placeholder {
+            color: #e2e8f0;
+            opacity: 0.6;
+        }
+        
+        .form-label {
+            font-weight: 500;
+            color: #e2e8f0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #6b48ff, #8b5cf6);
+            border: none;
+            border-radius: 10px;
+            padding: 12px 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #5439cc, #7c3aed);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(107, 72, 255, 0.4);
+        }
+        
+        .task-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 15px;
+            background: #4a5568;
+            border: 1px solid #718096;
+            transition: all 0.4s ease;
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        
+        .task-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .task-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .task-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        .task-item:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .task-item:hover {
+            background: #5a677c;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        .completed {
+            color: #94a3b8;
+        }
+        
+        .btn-sm {
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-success {
+            background: linear-gradient(45deg, #28a745, #34d058);
+        }
+        
+        .btn-success:hover {
+            background: linear-gradient(45deg, #218838, #2db44a);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+        }
+        
+        .btn-danger {
+            background: linear-gradient(45deg, #dc3545, #ef4444);
+        }
+        
+        .btn-danger:hover {
+            background: linear-gradient(45deg, #c82333, #dc2626);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-4">Task Management</h1>
+
+        <div class="card mb-5">
+            <div class="card-body">
+                <form id="taskForm">
+                    <div class="mb-4">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title" placeholder="Enter task title" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control" id="description" rows="4" placeholder="Enter task description"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label for="dueDate" class="form-label">Due Date</label>
+                        <input type="date" class="form-control" id="dueDate" placeholder="Select due date">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Is Completed</label>
+                        <div>
+                            <input type="radio" id="isCompleteTrue" name="isComplete" value="true">
+                            <label for="isCompleteTrue" class="form-label me-3">True</label>
+                            <input type="radio" id="isCompleteFalse" name="isComplete" value="false">
+                            <label for="isCompleteFalse" class="form-label">False</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" id="submitBtn">Add Task</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Task list -->
+        <h3>Tasks</h3>
+        <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search tasks by ID's..." oninput="filterTasks()" />
+        <div id="taskList"></div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
